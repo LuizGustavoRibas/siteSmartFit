@@ -11,15 +11,21 @@ html {
   line-height: 1.5;
 }
 
+
 li {
   list-style-type: none;
 }
 
-header > div {
+.navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 60px 10px;
+  background-color: #FFF;
+}
+
+header {
+  width: 100%;
 }
 
 .divLogo {
@@ -90,6 +96,7 @@ header > div {
   border-radius: 2.6rem;
   color: rgb(255, 255, 255);
   width: 13.2rem;
+  height: 2.3rem;
 }
 
 #btnNav > a {
@@ -98,6 +105,10 @@ header > div {
 
 #btnNav:hover {
   background: rgb(174, 30, 20);
+}
+
+body {
+  background-color: rgb(241, 241, 241);
 }
 
 .img1 {
@@ -763,7 +774,7 @@ th > h3 {
   height: 280px;
   background-color: #ffb612;
   border-radius: 10px;
-  margin-bottom: 0;
+  margin-bottom: 4px;
 }
 
 .phoneImg {
@@ -1081,4 +1092,182 @@ footer {
 
 .fa-whatsapp:before {
   content: "\f232";
+}
+
+.divTable2 {
+  display: none;
+}
+
+.linkApp2 {
+  display: none;
+}
+
+@media (max-width: 968px) {
+  .divNav .nav-list :not(#btnNav) {
+    display: none;
+  }
+
+  #btnNav {
+    width: 108px;
+    height: 23px;
+  }
+
+  .divLogo img {
+    width: 97px;
+    height: 36px;
+  }
+
+  .navigation {
+    padding: 10px 20px;
+  }
+
+  .divNav button {
+    margin-left: 15px;
+  }
+
+  .searchInsideImg2 {
+    width: 273px;
+    height: 21px;
+  }
+
+  .title2 h1, h2 {
+    text-align: center;
+  }
+
+  .divTable {
+    display: none;
+  }
+
+  .divTable2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blackPlan2, .smartPlan2 {
+    padding: 25px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+  } 
+
+  .blackPlan2 h1, .smartPlan2 h1 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 0;
+  }
+
+  .blackPlan2 b, .smartPlan2 b {
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+
+  .blackPlan2 p, .smartPlan2 p {
+    color: #656565;
+    font-size: 1.55rem;
+    margin-left: 0;
+  }
+
+  .btnStartNow2 {
+    margin: 20px 0;
+  }
+
+  .blackPlan2 .benefits, .smartPlan2 .benefits {
+    border: 0;
+  }
+
+  .planPrice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-top: 15px;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .planPrice strong {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-left: 0;
+  }
+
+  .planPrice small {
+    margin-left: 0;
+  }
+
+  .planPrice strong span {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  .benefits {
+    font-size: 1.4rem;
+    color: #333;
+    cursor: pointer;
+    margin: 0;
+    margin-right: 0.5rem;
+    font-weight: 600;
+  }
+
+  .divBenefits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .divBenefits svg {
+    margin: 0;
+    rotate: 90deg;
+  }
+
+  .title3 {
+    display: none;
+  }
+
+  .appContainer {
+    display: none;
+  }
+
+  .containerSection6 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .infoContainer {
+    margin-bottom: 8rem;
+  }
+
+  .section6 {
+    max-height: 2000px;
+  }
+
+  .linkApp2 {
+    display: block;
+  }
+
+  .linkApp2 ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .cards1 ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+  }
+
+  .cards1 ul li {
+    padding: 10px 0;
+  }
+
+  .section5 {
+    display: none;
+  }
+
 }

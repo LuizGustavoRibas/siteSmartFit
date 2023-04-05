@@ -6,6 +6,7 @@
   <link rel="preload" href="//assets.smartfit.com.br/fonts/gotham/GothamHTF-Medium.woff" as="font" crossorigin="anonymous">
   <link rel="preload" href="//assets.smartfit.com.br/fonts/gotham/Gotham-Bold.woff" as="font" crossorigin="anonymous">
   <link rel="preload" href="//assets.smartfit.com.br/fonts/gotham/Gotham-Black-Regular.woff" as="font" crossorigin="anonymous">
+  <link rel="icon" type="imagem/png" href="img/favicon.png"/>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +15,7 @@
 </head>
 <body>
   <header>
-    <div>
+    <div class="navigation">
       <div class="divLogo">
         <img src="https://smart-site-assets-production.s3.amazonaws.com/assets/new-home-v4-assets/logo-dark.svg" alt="Smart Fit" width="150" height="54">
       </div>
@@ -64,6 +65,9 @@
         <h1>A sua melhor opção na hora de <span>levar uma vida + saudável.</span></h1>
         <h2>Os melhores equipamentos, infraestrutura e muito mais com mensalidades acessíveis.</h2>
       </div>
+
+      <!-- Aqui está o código do site para PC -->
+
       <div class="divTable">
         <table>
           <span class="blackPlanFlag">
@@ -208,6 +212,48 @@
           </tr>
         </table>
       </div>
+      
+      <!-- Aqui está o código para mobile -->
+
+      <div class="divTable2">
+        <div class="blackPlan2">
+          <h1>Plano <b>black</b></h1>
+          <p>Sem taxa de manutenção anual</p>
+          <p>12 meses de fidelidade</p>
+          <div class="planPrice">
+            <small>A PARTIR DE</small>
+            <strong>
+              R$ 129,90<span>/mês</span>
+            </strong>
+            <button class="btnStartNow2">Começar agora</button>
+            <div class="divBenefits">
+              <button class="benefits">Mostrar benefícios</button>
+              <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.4912 7.91219C13.7879 8.17591 14.2422 8.14919 14.506 7.8525C14.7697 7.55582 14.743 7.10151 14.4463 6.83779L7.97752 1.08779C7.70519 0.845726 7.29482 0.845726 7.02249 1.08779L0.553746 6.83779C0.257058 7.10151 0.230335 7.55582 0.494058 7.8525C0.75778 8.14919 1.21208 8.17591 1.50877 7.91219L7.50001 2.58665L13.4912 7.91219Z" fill="black"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="smartPlan2">
+          <h1>Plano <b>smart</b></h1>
+          <p>Sem taxa de manutenção anual</p>
+          <p>12 meses de fidelidade</p>
+          <div class="planPrice">
+            <small>A PARTIR DE</small>
+            <strong>
+              R$ 89,90<span>/mês</span>
+            </strong>
+            <button class="btnStartNow2">Começar agora</button>
+            <div class="divBenefits">
+              <button class="benefits">Mostrar benefícios</button>
+              <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.4912 7.91219C13.7879 8.17591 14.2422 8.14919 14.506 7.8525C14.7697 7.55582 14.743 7.10151 14.4463 6.83779L7.97752 1.08779C7.70519 0.845726 7.29482 0.845726 7.02249 1.08779L0.553746 6.83779C0.257058 7.10151 0.230335 7.55582 0.494058 7.8525C0.75778 8.14919 1.21208 8.17591 1.50877 7.91219L7.50001 2.58665L13.4912 7.91219Z" fill="black"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="title3">
         <button class="btnStartNow" type="button">Começar agora</button>
         <p>Você será encaminhado(a) para o processo de escolha e contratação do seu plano Smart Fit.</p>
@@ -529,6 +575,20 @@
           <img class="lazyload" src="https://smartsite-production.s3.amazonaws.com/images/new_home_br/app-devices-v2.webp" alt="Smart Fit App">
           </div>  
         </div>
+        <div class="linkApp2">
+          <ul>
+            <li>
+              <a href="https://play.google.com/store/apps/details?id=com.eokoe.smartfitcoach&amp;hl=pt_BR&amp;gl=US" target="_blank" rel="noopener noreferrer">
+                <img src="https://assets.smartfit.com.br/production/newHome/google-play-badge.png" class="lazyload" alt="Disponível na Google Play">
+              </a>
+            </li>
+            <li class="secondLink">
+              <a href="https://apps.apple.com/br/app/smart-fit-app/id1308265270" target="_blank" rel="noopener noreferrer">
+                <img src="https://assets.smartfit.com.br/production/newHome/apple-badge.png" class="lazyload" alt="Baixar na App Store">
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="section7">
@@ -784,4 +844,5 @@
     <i style="margin-top:16px" class="fa fa-whatsapp"></i>
   </a>
 </body>
+<script src="script.js"></script>
 </html>
